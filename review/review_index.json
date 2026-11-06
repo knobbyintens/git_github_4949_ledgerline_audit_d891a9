@@ -8,28 +8,22 @@
       "description": "(sana): bound the memo table at 4096 entries"
     },
     {
+      "id": "RV-103",
+      "file": "src/core/cache.py",
+      "line": 28,
+      "description": "(otto): invalidate by currency partition, not whole ledger"
+    },
+    {
       "id": "RV-102",
       "file": "src/core/cache.py",
       "line": 31,
       "description": "log evictions at debug level only"
     },
     {
-      "id": "RV-103",
-      "file": "src/core/cache.py",
-      "line": 34,
-      "description": "(otto): invalidate by currency partition, not whole ledger"
-    },
-    {
       "id": "RV-104",
       "file": "src/core/cache.py",
-      "line": 38,
+      "line": 36,
       "description": "(amir): fall back to the on-disk spill when memory is tight"
-    },
-    {
-      "id": "RV-105",
-      "file": "src/core/cache.py",
-      "line": 40,
-      "description": "(jonas): batch the spill writes into 64 KiB chunks"
     },
     {
       "id": "RV-106",
@@ -46,7 +40,7 @@
     {
       "id": "RV-108",
       "file": "src/ingest/reader.py",
-      "line": 11,
+      "line": 10,
       "description": "(dana): tune after the staging import profile"
     },
     {
@@ -76,14 +70,8 @@
     {
       "id": "RV-113",
       "file": "src/ingest/writer.py",
-      "line": 24,
+      "line": 18,
       "description": "(emil): keep column order stable for downstream joins"
-    },
-    {
-      "id": "RV-114",
-      "file": "src/ingest/writer.py",
-      "line": 27,
-      "description": "(mira): validate the checksum sidecar before upload"
     },
     {
       "id": "RV-115",

@@ -1,0 +1,101 @@
+{
+  "schema_version": 1,
+  "entries": [
+    {
+      "id": "RV-101",
+      "file": "src/core/cache.py",
+      "line": 8,
+      "description": "(sana): bound the memo table at 4096 entries"
+    },
+    {
+      "id": "RV-102",
+      "file": "src/core/cache.py",
+      "line": 31,
+      "description": "log evictions at debug level only"
+    },
+    {
+      "id": "RV-103",
+      "file": "src/core/cache.py",
+      "line": 34,
+      "description": "(otto): invalidate by currency partition, not whole ledger"
+    },
+    {
+      "id": "RV-104",
+      "file": "src/core/cache.py",
+      "line": 38,
+      "description": "(amir): fall back to the on-disk spill when memory is tight"
+    },
+    {
+      "id": "RV-105",
+      "file": "src/core/cache.py",
+      "line": 40,
+      "description": "(jonas): batch the spill writes into 64 KiB chunks"
+    },
+    {
+      "id": "RV-106",
+      "file": "src/core/scheduler.py",
+      "line": 8,
+      "description": "(tess): cap parallel shard workers at 8"
+    },
+    {
+      "id": "RV-107",
+      "file": "src/core/scheduler.py",
+      "line": 16,
+      "description": "(kiran): skip the nightly run on settlement holidays"
+    },
+    {
+      "id": "RV-108",
+      "file": "src/ingest/reader.py",
+      "line": 11,
+      "description": "(dana): tune after the staging import profile"
+    },
+    {
+      "id": "RV-109",
+      "file": "src/ingest/reader.py",
+      "line": 15,
+      "description": "reject rows with a blank account code before batching"
+    },
+    {
+      "id": "RV-110",
+      "file": "src/ingest/reader.py",
+      "line": 37,
+      "description": "trim the byte order mark and lower-case every column name"
+    },
+    {
+      "id": "RV-111",
+      "file": "src/ingest/reader.py",
+      "line": 42,
+      "description": "(priya): keep the header cache keyed by normalized names"
+    },
+    {
+      "id": "RV-112",
+      "file": "src/ingest/writer.py",
+      "line": 15,
+      "description": "(noor): fsync only on the final flush, not per batch"
+    },
+    {
+      "id": "RV-113",
+      "file": "src/ingest/writer.py",
+      "line": 24,
+      "description": "(emil): keep column order stable for downstream joins"
+    },
+    {
+      "id": "RV-114",
+      "file": "src/ingest/writer.py",
+      "line": 27,
+      "description": "(mira): validate the checksum sidecar before upload"
+    },
+    {
+      "id": "RV-115",
+      "file": "src/ingest/writer.py",
+      "line": 29,
+      "description": "include the schema version in the digest input"
+    },
+    {
+      "id": "RV-116",
+      "file": "src/ingest/writer.py",
+      "line": 33,
+      "description": "(ravi) retry the manifest upload once when the store returns 503"
+    }
+  ]
+}
